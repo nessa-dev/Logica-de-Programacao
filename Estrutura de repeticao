@@ -1,16 +1,16 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
+
+//Escreva um programa que imprima todos os números inteiros de 100 a 1 (em ordem decrescente).
 
 int main()
 {
-    printf("Hello World");
-
-    return 0;
+    int i;
+    
+   for (i = 100; i > 0; i--)
+   {
+       printf("%d ", i);
+   }
+   
+   return 0;
+   
 }
