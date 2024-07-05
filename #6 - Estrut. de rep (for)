@@ -1,0 +1,30 @@
+/******************************************************************************
+
+Construa um algoritmo que, dado o primeiro elemento e a razão de uma progressão 
+aritmética (PA), imprima todos os n primeiros elementos da PA, onde n também é 
+informado pelo usuário. Lembre-se que uma PA pode ser crescente ou decrescente.   
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main(){
+    
+    int pa, razao, n, i, elemento;
+
+printf("Digite o primeiro elemento da Progressão aritmética (PA):\n");
+scanf("%d", &pa);
+printf("Informe a razão da PA:\n");
+scanf("%d", &razao);
+printf("Informe o 'n' da PA:\n");
+scanf("%d", &n);
+
+elemento = pa;
+
+    for (i = 0; i < n; i++) {
+        printf("%d ", elemento);
+        elemento += razao; // Atualiza o próximo elemento da PA
+    }
+
+    return 0;
+}
