@@ -1,0 +1,24 @@
+/******************************************************************************
+
+Agora modifique o exercício anterior, considerando agora somente os 
+resultados que forem ímpares.  
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+ int i, num, resultado;
+ 
+ printf("Digite um número de 1-10:\n");
+ scanf("%d", &num);
+
+for (i = 1; i <=10; i++){
+    resultado = num * i;
+if (resultado % 2 != 0){
+    printf("%d X %d = %d\n", num, i, resultado);
+}
+}
+   return 0;
+}
