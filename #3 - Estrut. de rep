@@ -1,8 +1,8 @@
 /******************************************************************************
 
-Crie um algoritmo que, dado um número informado pelo usuário, 
-imprima a tabuada dele de 1 a 10. Use o formato de apresentação 
-(considerando que o usuário informou o número 5): 
+Modifique o algoritmo anterior, de maneira que o usuário também informe 
+o início e o fim da tabuada. Por exemplo: usuário solicitando a tabuada 
+do número 6, com início em 5 e fim em 8. 
 
 *******************************************************************************/
 
