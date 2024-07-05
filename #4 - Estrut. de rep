@@ -1,0 +1,26 @@
+/******************************************************************************
+
+Modifique o algoritmo do exercício 1, de maneira que sejam impressos somente as 
+multiplicações da tabuada cujo resultado seja um número par.  
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+ int i, num, resultado;
+ 
+ printf("Digite um número de 1-10:\n");
+ scanf("%d", &num);
+
+for (i = 1; i <=10; i++){
+    resultado = num * i;
+if (resultado % 2 == 0){
+    printf("%d X %d = %d\n", num, i, resultado);
+}
+}
+ 
+
+   return 0;
+}
