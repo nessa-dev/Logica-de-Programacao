@@ -1,0 +1,23 @@
+/******************************************************************************
+
+Crie um algoritmo que, dado um número informado pelo usuário, 
+imprima a tabuada dele de 1 a 10. Use o formato de apresentação 
+(considerando que o usuário informou o número 5): 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+   int num, i; 
+    
+   printf("Digite um número de 1 - 10:\n");
+   scanf("%d", &num);
+    
+ for(i = 1; i <= 10; i++) {
+       printf("%d X %d = %d\n", num, i, num * i);
+   }
+
+   return 0;
+}
