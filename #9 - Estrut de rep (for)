@@ -1,0 +1,26 @@
+/******************************************************************************
+
+ Faça um programa que leia 7 números inteiros e no final mostre 
+ o somatório entre eles.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+ 
+ int soma = 0, num, i;
+ 
+ 
+ for (i = 0; i < 7; i++){
+     soma+=i; 
+ printf("Digite um número inteiro:\n");
+ scanf("%d", &num);
+ 
+ }
+ 
+ printf("A soma é: %d \n", soma);
+    return 0;
+    
+}
