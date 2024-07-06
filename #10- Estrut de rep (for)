@@ -1,0 +1,31 @@
+/******************************************************************************
+
+ Crie um programa que leia 6 números inteiros e no final mostre quantos 
+ deles são pares e quantos são ímpares.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+ 
+ int num, i, par = 0, impar = 0;
+ 
+ for (i = 0; i < 6; i++){
+     printf("Digite um número inteiro:\n");
+     scanf("%d", &num);
+     if(num % 2 != 0){
+         impar++;
+     } else {
+         par++;
+         
+     }
+ }
+ 
+printf("A quantidade de número impares é %d\n", impar);
+printf("A quantidade de número pares é %d\n", par);
+ 
+    return 0;
+    
+}
