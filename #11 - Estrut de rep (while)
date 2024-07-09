@@ -1,0 +1,51 @@
+/******************************************************************************
+
+ Faça um aplicativo que leia o preço de 8 produtos. No final, mostre 
+ na tela qual foi o maior e qual foi o menor preço digitados. 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    float produto, maior, menor;
+    int i;
+
+    // Ler o primeiro produto
+    printf("Informe o preço do produto 1:\n");
+    scanf("%f", &produto);
+
+    // Inicializar 'maior' e 'menor' com o primeiro preço digitado
+    maior = produto;
+    menor = produto;
+
+    // Inicializar o contador
+    i = 1;
+
+    // Loop para ler os próximos 7 produtos
+    while (i < 8) {
+        printf("Informe o preço do produto %d:\n", i + 1);
+        scanf("%f", &produto);
+
+        // Comparar e atualizar 'maior' e 'menor' se necessário
+        if (produto > maior) {
+            maior = produto; // Atualiza 'maior' se o preço atual for maior
+        } else if (produto < menor) {
+            menor = produto; // Atualiza 'menor' se o preço atual for menor
+        }
+
+        // Incrementar o contador
+        i++;
+    }
+
+    // Exibir o maior e o menor preço
+    printf("O maior preço digitado foi: %.2f\n", maior);
+    printf("O menor preço digitado foi: %.2f\n", menor);
+
+    return 0;
+}
+
+
+
+
+    
