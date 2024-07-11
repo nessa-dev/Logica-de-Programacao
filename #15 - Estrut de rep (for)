@@ -1,0 +1,27 @@
+/*******************************************************************************
+
+Escreva um programa que calcule o quociente da divisão de A por B (número inteiros e
+positivos), ou seja, A / B, através de subtrações sucessivas. Esses dois valores são
+passados pelo usuário através do teclado. 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    
+    int a, b, i = 0; // Inicialize i com 0
+    
+    printf("Digite o valor de A: ");
+    scanf("%d", &a);
+    printf("Digite o valor de B: ");
+    scanf("%d", &b);
+
+    while (a >= b) { // A condição correta para o loop
+        a = a - b; // Subtrai B de A diretamente
+        i++; // Incrementa o contador
+    }
+
+    printf("Podemos subtrair %d de A %d vezes.\n", b, i);
+    return 0;
+}
