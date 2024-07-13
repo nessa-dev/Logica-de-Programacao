@@ -1,0 +1,31 @@
+/******************************************************************************
+Escreva um programa que calcule o resto da divisão de A por B (número inteiros e
+positivos), ou seja, A % B, através de subtrações sucessivas. Esses dois valores são
+passados pelo usuário através do teclado.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b ; 
+    
+    printf("Digite o valor de A: ");
+    scanf("%d", &a);
+    printf("Digite o valor de B: ");
+    scanf("%d", &b);
+    
+    if(a < b){
+        printf("B deve ser menor que A");
+        return 1;
+    }
+    
+    while (a >= b){
+        a = a - b;
+    }
+    
+    printf("O resto da divisão entre A e B é %d", a);
+
+    return 0;
+}
