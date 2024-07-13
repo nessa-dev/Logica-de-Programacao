@@ -1,0 +1,31 @@
+/******************************************************************************
+Escreva um programa que determine se um dado número N (digitado pelo usuário) é
+primo ou não.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int num, i;
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+    
+    if (num <= 1){
+        printf("Esse número não é primo.");
+    }
+    
+    for (i = 2; i < num; i++){
+       
+    }
+    
+      if (num % i !=0){
+            printf("Esse número é primo!");
+        } else {
+            printf("Esse número não é primo.");
+        }
+    
+    return 0;
+}
