@@ -16,8 +16,8 @@ int main()
     printf("Digite o valor de B: ");
     scanf("%d", &b);
     
-    if(a < b){
-        printf("B deve ser menor que A");
+    if(b <= 0){
+        printf("B deve ser maior que 0");
         return 1;
     }
     
