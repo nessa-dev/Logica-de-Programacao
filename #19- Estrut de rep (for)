@@ -1,0 +1,36 @@
+/******************************************************************************
+A série de Fibonacci é formada pela sequencia:
+• 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
+Escreva um programa que gere a série de FIBONACCI até o N-ésimo termo (com N
+sendo uma entrada do algoritmo).
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    int anterior = 0; // Inicializa o número anterior como 0
+    int atual = 1;    // Inicializa o número atual como 1
+    int proximo;      // Variável para armazenar o próximo número na sequência
+    int i, n;
+
+    printf("Digite quantos números da sequência de Fibonacci deseja gerar: ");
+    scanf("%d", &n);
+
+    printf("Série de Fibonacci até o %d-ésimo termo:\n", n);
+
+    // Caso especial para o primeiro termo
+    if (n >= 1) {
+        printf("%d ", atual); // Imprime o primeiro termo se n >= 1
+    }
+
+    // Loop para gerar os próximos termos da sequência
+    for (i = 2; i <= n; i++) {
+        proximo = anterior + atual; // Calcula o próximo termo
+        printf("%d ", proximo);     // Imprime o próximo termo
+        anterior = atual;           // Atualiza o número anterior para o atual
+        atual = proximo;            // Atualiza o número atual para o próximo
+    }
+
+    return 0;
+}
