@@ -1,0 +1,54 @@
+/******************************************************************************
+Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final: 
+a) Quantos homens foram cadastrados 
+b) Quantas mulheres foram cadastradas 
+c) A média de idade do grupo 
+d) A média de idade dos homens 
+e) Quantas mulheres tem mais de 20 anos  
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    
+    int idade, masculino = 0, feminino = 0, soma = 0, soma_h = 0, maior = 0, i ;
+    char sexo;
+    float media, media_h;
+    
+    //Estrutura de repetição
+    
+    for (i = 0; i < 5; i++){
+        printf("Informe a idade da %d° pessoa: ", i + 1);
+        scanf("%d", &idade);
+        printf("Digite o sexo da %d° pessoa (F - Feminino ou M - Masculino: ", i + 1);
+        scanf(" %c", &sexo);
+        
+        soma+=idade;
+        
+        if(sexo == 'f' || sexo == 'F'){
+            feminino++;
+            if (idade > 20){
+                maior++;
+            }
+        } else if (sexo == 'M' || sexo == 'm'){
+            masculino++;
+            soma_h+=idade; 
+        } else {
+            printf("Sexo inválido. Escolha F ou M");
+        }
+        
+    }
+    
+    //cálculo da média
+    media_h = soma_h / masculino;
+    media = soma / 5;
+    
+    printf("Foram cadastrados %d homens\n", masculino);
+    printf("Foram cadastradas %d mulheres\n", feminino);
+    printf ("A média de idade do grupo é %.2f\n", media);
+    printf("A média de idade dos homens é %.2f\n", media_h);
+    printf("Tem %d mulheres com +20 anos", maior);
+    
+    
+}
