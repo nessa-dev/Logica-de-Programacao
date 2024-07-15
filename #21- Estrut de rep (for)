@@ -1,0 +1,45 @@
+/******************************************************************************
+ Crie um algoritmo que leia a idade de 5 pessoas, mostrando no final:
+ 
+ a) Qual é a média de idade do grupo 
+ b) Quantas pessoas tem mais de 18 anos 
+ c) Quantas pessoas tem menos de 5 anos 
+ d) Qual foi a maior idade lida 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    
+    int idade, soma = 0, media, i, maior = 0, menor = 0, idade_maior = 0;
+    
+    
+    for (i = 0; i < 5; i++){
+    printf("Digite a idade da %d° pessoa: ", i + 1);
+    scanf ("%d", &idade);  
+    
+    soma+=idade; 
+    
+     if (idade > 18){
+        maior++;
+    
+    } else if (idade < 5){
+        menor++;
+        
+    }
+    
+    if (idade > idade_maior){
+        idade_maior = idade;;
+    }
+    }
+    
+    media = soma / 5;
+    printf ("A média de idade é %d\n", media);
+    printf("%d pessoas tem mais de 18 anos\n", maior);
+    printf("%d pessoas tem menor de 5 anos\n", menor);
+    printf ("A maior idade lida foi %d anos", idade_maior ); 
+    
+
+    return 0;
+}
