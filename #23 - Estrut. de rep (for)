@@ -1,0 +1,51 @@
+/******************************************************************************
+Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando no final: 
+a) Qual foi a média de altura do grupo 
+b) Quantas pessoas pesam mais de 90Kg 
+c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m 
+d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    
+    //DECLARAÇÃO DE VARIÁVEIS
+    int i, maior_kg = 0, menor = 0, maiord = 0;
+    float peso, altura, soma = 0, media;
+    
+    //estrutura de repetição
+    for (i = 0; i < 7; i++) {
+        printf("Digite o peso da %dª pessoa: ", i + 1);
+        scanf("%f", &peso);
+        printf("Digite a altura da %dª pessoa: ", i + 1);
+        scanf("%f", &altura);
+        
+        //soma de altura
+        soma += altura;
+        
+        //condições
+        if (peso > 90) {
+            maior_kg++;
+        }
+        if (peso < 50 && altura < 1.60) {
+            menor++;
+        }
+        if (peso > 100 && altura > 1.90) {
+            maiord++;
+        }
+    }
+    
+    //cálculo da média
+    media = soma / 7;
+    
+    //Imprimir na tela
+    printf("------------------------------------------\n");
+    printf("Média da altura do grupo: %.2f\n", media);
+    printf("Pessoas que pesam mais de 90kg: %d\n", maior_kg);
+    printf("Pessoas que pesam menos de 50kg e tem menos de 1.60m: %d\n", menor);
+    printf("Pessoas que medem mais de 1.90m e pesam mais de 100kg: %d\n", maiord);
+    
+    return 0;
+}
