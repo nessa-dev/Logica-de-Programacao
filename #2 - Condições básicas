@@ -1,0 +1,30 @@
+/******************************************************************************
+
+ Faça um algoritmo para receber um número qualquer e imprimir na tela se o 
+ número é par ou ímpar, positivo ou negativo.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+   //Declaração de variáveis
+   int num;
+   
+   printf("Informe um número:\n");
+   scanf("%d", &num);
+   
+   if (num % 2 == 0){
+       printf("Esse número é par\n");
+   } else {
+       printf("Esse número é ímpar\n");
+   }
+   
+   
+   if (num >= 0){
+       printf("Esse número é positivo");
+   } else {
+       printf ("Esse número é negativo");
+   }
+}
