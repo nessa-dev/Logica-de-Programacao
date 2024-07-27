@@ -1,0 +1,30 @@
+/******************************************************************************
+
+Faça um algoritmo que leia os valores de A, B, C e em seguida imprima na tela 
+a soma entre A e B é mostre se a soma é menor que C.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+   //Declaração de variáveis
+   int a, b, c, soma;
+   
+   //Entrada
+   printf("Informe o valor de A:\n");
+   scanf("%d", &a);
+   printf("Informe o valor de B:\n");
+   scanf("%d", &b);
+   printf("Informe o valor de C:\n");
+   scanf("%d", &c);
+   
+   
+   soma = a + b;
+   if(soma > c){
+       printf("A soma é maior que C");
+   } else {
+       printf("A soma é menor que C");
+   }
+}
