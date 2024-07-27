@@ -1,0 +1,24 @@
+/******************************************************************************
+
+Faça um algoritmo que leia um valor qualquer e imprima na tela com um reajuste de 5%.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    //Declarando variável
+    int valor, reajuste;
+    
+    printf("Informe um valor:\n");
+    scanf("%d", &valor);
+    
+    reajuste = (0.05 * valor) + valor;
+    
+    printf("O reajuste foi de %d", reajuste);
+    
+    return 0;
+    
+}
+  
