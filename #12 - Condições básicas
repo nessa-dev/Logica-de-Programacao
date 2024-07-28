@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das 
+nota obtidas, imprima na tela o nome do aluno e se o aluno foi aprovado ou 
+reprovado. Para o aluno ser considerado aprovado sua média final deve ser 
+maior ou igual a 7.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    
+   float nota1, nota2, nota3, nota4, media;
+   char nome [20];
+   
+   printf("Informe o nome do aluno:\n");
+   fgets(nome, sizeof(nome), stdin);
+   printf("Informe a sua primeira nota:\n");
+   scanf("%f", &nota1);
+   printf("Informe a sua segunda nota:\n");
+   scanf("%f", &nota2);
+   printf("Informe a sua terceira nota:\n");
+   scanf("%f", &nota3);
+   printf("Informe a sua quarta nota:\n");
+   scanf("%f", &nota4);
+   
+   
+   media = (nota1 + nota2 + nota3 + nota4)/4;
+   
+   if (media >= 7){
+       printf("O(A) aluno(a) %s foi aprovado(a)!\n", nome);
+   } else{
+       printf("O(A) aluno(a) %s está reprovado(a) :(", nome);
+   }
+   
+   printf("Sua média é %.2f\n", media);
+    
+    return 0;
+}
+
+  
