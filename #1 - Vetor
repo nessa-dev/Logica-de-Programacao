@@ -1,0 +1,47 @@
+/******************************************************************************
+
+ Faça um programa para criar dois vetores de 10 números inteiros, A e B. O programa 
+ deve preencher o vetor A com valores digitados pelo usuário. O vetor B deve ser 
+ preenchido da seguinte forma: os elementos de índice par são os correspondentes 
+ de A divididos por 2 e os elementos de índice ímpar são os correspondentes de A 
+ multiplicados por 3. Ao final, o programa deverá exibir os dois vetores (A e B). 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int A[10], B [10];
+    int i;
+    
+    //preenchendo os valores digitados pelo o usuário
+    for (i = 0; i < 10; i++){
+    printf("Digite o %d° valor:\n", i + 1);
+    scanf("%d", &A[i]);
+    }
+    
+    //preenchendo os valores de B
+    for (i = 0; i < 10; i++){
+        if (i% 2 == 0){
+            B[i] = A[i] / 2;
+        } else {
+            B[i] = A[i] * 3;
+        }
+    }
+    
+    //exibindo o valor de A e B
+    printf("Vetor de A:\n");
+    for (i = 0; i < 10; i++){
+        printf(" %d", A[i]);
+    }
+    
+    printf("\n");
+    
+    printf("Vetor de B:\n");
+    for (i = 0; i < 10; i++){
+        printf(" %d", B[i]);
+    }
+    
+   return 0; 
+}
