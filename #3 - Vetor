@@ -1,0 +1,24 @@
+/******************************************************************************
+
+ Faça um programa para criar um vetor VET de 100 números reais. O vetor VET deve 
+ ser preenchido com valores informados pelo usuário. O programa deve calcular e 
+ exibir a soma dos elementos do vetor. 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+        int VET[100], i, soma = 0;
+        
+        
+        for(i = 0; i < 100; i++){
+            printf("Informe o %d° valor:\n", i + 1);
+            scanf("%d", &VET[i]);
+            soma +=VET[i];
+        }
+        
+        printf("A soma de todos os elementos é: %d\n", soma);
+    return 0;
+}
