@@ -1,0 +1,39 @@
+/******************************************************************************
+
+ Faça um programa para criar três vetores de 5 números inteiros, A, B e C. Os 
+ vetores A e B devem ser preenchidos com valores digitados pelo usuário. O 
+ programa deve calcular a soma dos vetores A e B e armazenar o resultado no vetor C. 
+ Ao final, o programa deverá exibir o conteúdo do vetor C 
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int A[5], B[5], C[5], i;
+    
+    
+    //preenchendo os valor de A digitados pelo usuário
+    printf("Vetores de A:\n");
+    for(i = 0; i < 5; i++){
+        printf("Digite o %d° número inteiro:\n", i + 1);
+        scanf("%d", &A[i]);
+    }
+    
+    //preenchendo os valores de B digitados pelo usuário
+    printf("Vetores de B:\n");
+    for (i = 0; i < 5; i++){
+        printf("Digite o %d° número inteiro:\n", i + 1);
+        scanf("%d", &B[i]);
+    }
+    
+    printf("Vetores de C:\n");
+    //preenchendo os valores de c
+    for(i = 0; i < 5; i++){
+        C[i] = A[i] + B[i];
+        printf("%d ", C[i]);
+    }
+    
+    return 0;
+}
