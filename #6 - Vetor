@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[10], i, menor, maior;
+    
+    // Receber os 10 números do usuário
+    for(i = 0; i < 10; i++) {
+        printf("Informe o %d° número\n", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+    
+    // Inicializar 'menor' e 'maior' com o primeiro elemento do vetor
+    menor = vetor[0];
+    maior = vetor[0];
+    
+    // Encontrar o menor e maior elemento do vetor
+    for(i = 1; i < 10; i++) {
+        if(vetor[i] < menor) {
+            menor = vetor[i];  // Atualiza o valor de 'menor' se encontrar um número menor
+        }
+        if(vetor[i] > maior) {
+            maior = vetor[i];  // Atualiza o valor de 'maior' se encontrar um número maior
+        }
+    }
+    
+    // Imprimir o menor e maior elemento
+    printf("O menor elemento é: %d\n", menor);
+    printf("O maior elemento é: %d\n", maior);
+    
+    return 0;
+}
