@@ -1,0 +1,28 @@
+/******************************************************************************
+Vitória quer estudar a tabuada de multiplicação. Faça um programa que 
+leia um número e mostre sua tabuada de 1 a 10.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int i, tabuada = 0, num;
+    
+    printf("--------------- Tabuada ----------------");
+    printf("\nInforme um número de 1 - 10:\n");
+    scanf("%d", &num);
+    
+    if (num > 10){
+        printf("Não é possível criar essa tabuada, somente de 1 - 10!");
+    } else{
+        
+        for(i = 0; i < 11; i++){
+      tabuada = num * i;
+      printf("\n %d X %d = %d\n", num, i, tabuada);
+      
+    }
+    
+    }
+    
+}
