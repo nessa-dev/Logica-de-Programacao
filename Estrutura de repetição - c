@@ -1,0 +1,22 @@
+/******************************************************************************
+João quer saber quantas calorias ele perdeu durante 7 dias de treino. 
+Faça um programa que peça quantas calorias ele gastou por dia e mostre 
+o total ao final.
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int dia, soma = 0, i; 
+    
+   for(i = 0; i < 7; i++){
+       printf("Informe quantas calorias você perdeu no %d° dia?\n", i + 1);
+       scanf("%d", &dia);
+       
+       soma+=dia;
+       
+   }
+   
+   printf("Você perdeu o total de %d calorias em 7 dias!", soma);
+}
