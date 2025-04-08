@@ -1,0 +1,27 @@
+/******************************************************************************
+Um posto deseja saber quantos litros de gasolina foram vendidos no dia. Para 
+isso, ele irá registrar o número de litros a cada abastecimento. O programa deve
+continuar pedindo valores até que o usuário digite 0. No final, exiba a quantidade
+total de litros vendidos.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int litros = 1, soma = 0;
+    
+    printf("Digite zero para finalizar\n");
+    
+    while (litros != 0){
+       printf("\nInforme a quantidade de litros:\n");
+       scanf("%d", &litros);
+       soma+=litros;
+    }
+    
+    
+    printf("A quantidade total de litros no dia foi %d \n", soma);
+    return 0;
+}
