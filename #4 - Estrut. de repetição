@@ -1,0 +1,30 @@
+/******************************************************************************
+Você está simulando um carrinho de compras. O usuário deve informar o preço de
+cada produto e o programa deve somar tudo. A entrada acaba quando o usuário 
+digitar um valor negativo. No final, exiba o total a pagar.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int soma = 0, produto = 0; 
+    int i = 0; 
+    
+    
+   while(produto >=0){
+       
+       printf("Informe o preço do %d produto: \n", i + 1);
+       scanf("%df", &produto);
+       i++;
+       soma+=produto;
+   }
+   
+   
+   printf("O total a pagar é %d\n", soma);
+   
+   
+    return 0;
+}
