@@ -1,1 +1,1 @@
-Exercícios voltados para a prática de lógica de programação em C.
+Exercícios voltados para a prática de lógica de programação em C e c#
