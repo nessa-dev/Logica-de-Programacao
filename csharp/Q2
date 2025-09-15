@@ -1,1 +1,25 @@
+using System;
 
+//  Crie um programa que leia o nome e o salário de um funcionário, mostrando no final uma mensagem.
+
+class Program
+{
+    static void Main()
+    {
+
+
+        Console.WriteLine("Digite seu nome:");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Digite seu salário:");
+        double salario = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Nome do funcionário: " + nome);
+        Console.WriteLine("Salário: " + salario);
+        Console.WriteLine("O funcionário " + nome + " tem um salario de R$ " + salario);
+
+
+
+
+
+    }
+}
