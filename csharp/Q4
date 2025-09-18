@@ -1,0 +1,25 @@
+using System;
+
+//Desenvolva um algoritmo que leia duas notas e mostre a média.
+class Program
+{
+    static void Main()
+    {
+        double nota1, nota2, media;
+
+        Console.WriteLine("Enter your first grade:");
+        while (!double.TryParse(Console.ReadLine(), out nota1))
+        {
+            Console.WriteLine("Invalid Attempt, please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter your second grade:");
+        while (!double.TryParse(Console.ReadLine(), out nota2))
+        {
+            Console.WriteLine("Invalid Attempt, please enter a valid number:");
+        }
+        media = (nota1 + nota2) / 2;
+        Console.WriteLine($"Your grade average is: {media}");
+
+    }
+    }
