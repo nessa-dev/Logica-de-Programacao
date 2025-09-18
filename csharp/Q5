@@ -1,0 +1,24 @@
+using System;
+
+//Faça um programa que leia um número inteiro e mostre o seu antecessor e sucessor.
+
+class Program { 
+    static void Main()
+    {
+        int num, sucessor, antecessor;
+
+        Console.WriteLine("Send a number:");
+        while (!int.TryParse(Console.ReadLine(), out num)) {
+
+            Console.WriteLine("Invalid number! Please, send a valid integer number");
+        }
+
+        sucessor = num + 1;
+        antecessor = num - 1;
+
+        Console.WriteLine($"Your number: {num} // Sucessor: {sucessor} // Antecessor: {antecessor}");
+
+
+
+    }
+    }
