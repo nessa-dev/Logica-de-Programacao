@@ -1,1 +1,27 @@
+using System;
+
+//Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+class Program
+{
+    static void Main()
+    {
+        int number1;
+        int number2;
+
+        Console.WriteLine("Enter the first integer:");
+        while (!int.TryParse(Console.ReadLine(), out number1))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer:");
+        }
+
+        Console.WriteLine("Enter the second integer:");
+        while (!int.TryParse(Console.ReadLine(), out number2))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid integer:");
+        }
+
+        int sum = number1 + number2;
+        Console.WriteLine($"The sum of {number1} and {number2} is {sum}");
+    }
+}
 
