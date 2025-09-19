@@ -1,0 +1,22 @@
+using System;
+
+//Faça um programa que leia um número inteiro e mostre o dobro e a terça parte desse número.
+
+class Program {
+    static void Main()
+    {
+        int num, dobro, terca;
+
+        Console.WriteLine("Enter a number:");
+        while (!int.TryParse(Console.ReadLine(), out num))
+        {
+                       Console.WriteLine("Invalid input. Please enter a valid integer:");
+        }
+
+        dobro = num * 2;
+        terca = num / 3;
+
+        Console.WriteLine($"Twice the number is: {dobro} and the third part is {terca}");
+
+    }
+    }
