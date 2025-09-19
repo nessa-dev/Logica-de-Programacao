@@ -1,0 +1,19 @@
+using System;
+
+//Write a C# program that converts an amount of money from a purse to dollars 
+class Program {
+    static void Main()
+    {
+        double purse, dolar;
+
+        Console.Write("Enter the amount of money in your purse: ");
+        while (!double.TryParse(Console.ReadLine(), out purse))
+            {
+            Console.WriteLine("ivalid input. Please enter a numeric value.");
+        }
+
+        dolar = purse / 5.31;
+        Console.WriteLine($"The amount in dollars is: {dolar:C2}");
+    }
+    }
+
