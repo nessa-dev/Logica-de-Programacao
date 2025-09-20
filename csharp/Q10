@@ -1,0 +1,22 @@
+using System;
+
+//Create a program that reads the price of a product, calculates it, and displays its
+// PROMOTIONAL PRICE, with a 5% discount.
+class Program {
+    static void Main()
+    {
+
+        double produto, promo;
+        
+        Console.WriteLine("Inform the price of the product: ");
+        while (!double.TryParse(Console.ReadLine(), out produto))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number for the price of the product: ");
+        }
+
+        promo = produto - (0.05 * produto);
+
+        Console.WriteLine($"The promotional price is: {promo:C2}");
+    }
+    }
+
