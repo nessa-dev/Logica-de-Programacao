@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int day;
+        double salary;
+
+        Console.Write("Enter the number of days (1 to 31): ");
+        while (!int.TryParse(Console.ReadLine(), out day) || day < 1 || day > 31)
+        {
+            Console.Write("Invalid input. Please enter a number between 1 and 31: ");
+        }
+
+        double valorHora = 25;
+        int horasPorDia = 8;
+
+        salary = valorHora * horasPorDia * day;
+
+        Console.WriteLine($"The total salary for {day} days is: R${salary:F2}");
+    }
+}
