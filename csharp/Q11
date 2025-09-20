@@ -1,0 +1,22 @@
+using System;
+
+//Create an algorithm that reads an employee's salary, calculates it, and displays
+//their new salary, with a 15% increase.
+class Program {
+    static void Main()
+    {
+
+        double wage, increase;
+        
+        Console.WriteLine("Enter your wage: ");
+        while (!double.TryParse(Console.ReadLine(), out wage))
+        {
+            Console.WriteLine("Invalid input. Please enter a valid number for the price of the wage: ");
+        }
+
+        increase = wage + (0.15 * wage);
+
+        Console.WriteLine($"Your new salary  is: {increase:C2}");
+    }
+    }
+
