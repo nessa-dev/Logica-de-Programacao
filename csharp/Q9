@@ -1,0 +1,36 @@
+using System;
+
+// Develop logic that reads the values ​​of A, B, and C from a quadratic equation
+//and displays the value of Delta.
+class Program {
+    static void Main()
+    {
+
+        int a, b, c, delta;
+
+        Console.WriteLine("Enter the Value of A: ");
+        while (!int.TryParse(Console.ReadLine(), out a))
+        {
+            Console.WriteLine("Invalid attempt! Try entering only numbers:");
+        }
+
+        Console.WriteLine("Enter the Value of B: ");
+        while (!int.TryParse(Console.ReadLine(), out b))
+        {
+            Console.WriteLine("Invalid attempt! Try entering only numbers:");
+        }
+
+        Console.WriteLine("Enter the Value of C: ");
+        while (!int.TryParse(Console.ReadLine(), out c))
+        {
+            Console.WriteLine("Invalid attempt! Try entering only numbers:");
+        }
+
+        delta = (b * b) - (4 * a * c);
+
+        Console.WriteLine($"The delta value of this research is: {delta}");
+
+
+    }
+    }
+
