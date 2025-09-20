@@ -1,0 +1,33 @@
+using System;
+
+//Write a program that requires the number of kilometers traveled by an offered car and the
+//number of days for which it was offered. Calculate the total price to be paid,
+//knowing that the car costs R$90 per day and R$0.20 per kilometer driven.
+class Program {
+    static void Main()
+    {
+
+        int km, day;
+        double price;
+        
+        Console.WriteLine("Enter the number of kilometers driven: ");
+        while(!int.TryParse(Console.ReadLine(), out km)){
+
+            Console.WriteLine("Invalid input. Please enter a valid number of kilometers: ");
+        }
+
+        Console.WriteLine("Enter the number of days: ");
+        while (!int.TryParse(Console.ReadLine(), out day))
+        {
+
+            Console.WriteLine("Invalid input. Please enter a valid the number of days: ");
+        }
+
+        price = (90 * day) + (0.20 * km);
+
+        Console.WriteLine($"The total price of the car rental is: {price:C2}");
+
+
+    }
+    }
+
