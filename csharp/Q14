@@ -1,6 +1,4 @@
 using System;
-using System.Diagnostics.Tracing;
-using System.Reflection.PortableExecutable;
 
 class Program
 {
