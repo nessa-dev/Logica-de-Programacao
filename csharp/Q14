@@ -1,0 +1,30 @@
+using System;
+using System.Diagnostics.Tracing;
+using System.Reflection.PortableExecutable;
+
+class Program
+{
+    static void Main()
+    {
+        int cigarros, anos, dia,qtd, vida;
+        
+        Console.WriteLine("Digite a quantidade de cigarros fumados por dia:");
+        while(!int.TryParse(Console.ReadLine(), out cigarros) || cigarros < 0)
+        {
+            Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro não negativo para a quantidade de cigarros fumados por dia:");
+        }
+        Console.WriteLine("Quantos anos você já fumou?");
+        while (!int.TryParse(Console.ReadLine(), out anos) || anos < 0)
+        {
+            Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro não negativo:");
+        }
+
+
+        dia = cigarros * 10;
+        qtd = anos * 365;
+        vida = (dia * qtd) / 1440;  
+
+        Console.WriteLine($"Você perdeu {vida} dias de vida.");
+
+    }
+}
