@@ -1,0 +1,40 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    double valor, pro;
+     
+    Console.WriteLine("What is your name?");
+    string name = Console.ReadLine();
+    
+    Console.WriteLine("What is your gender? (W - Woman / M - Man)");
+    string caracter = Console.ReadLine();
+    
+    Console.WriteLine("What is the value of your purchases?");
+    while(!double.TryParse(Console.ReadLine(), out valor)){
+        Console.WriteLine("Incorrect attempt. Please enter a valid value:");
+    }
+     
+    Console.WriteLine($"Hello, {name}!");
+    
+    if (caracter == "M" || caracter == "m") {
+        pro = valor - (0.05 * valor);
+        Console.WriteLine($"You got a 5% discount: {pro:C2}");
+    } 
+    else if (caracter == "W" || caracter == "w") {
+        pro = valor - (0.10 * valor);
+        Console.WriteLine($"You got a 10% discount: {pro:C2}");
+    } 
+    else {
+        Console.WriteLine("Invalid gender option entered.");
+    }
+  }
+}
