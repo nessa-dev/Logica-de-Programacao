@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class HelloWorld {
+  static void Main() {
+    
+    int km;
+    double value;
+    
+    Console.WriteLine("How far do you want to travel?");
+    while(!int.TryParse(Console.ReadLine(), out km)){
+        Console.WriteLine("Invalid attempt. Please enter a valid value:");
+    }
+    
+    if (km <= 200){
+        value = 0.50 * km;
+        Console.WriteLine($"The amount to be paid is {value:C2}");
+    } else {
+        value = 0.45 * km;
+        Console.WriteLine($"The amount to be paid is {value:C2}");
+    }
+    
+    
+    
+    
+  }
+}
