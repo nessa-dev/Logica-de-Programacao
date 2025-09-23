@@ -1,0 +1,34 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class HelloWorld {
+  static void Main() {
+      
+    double n1, n2, media;
+    
+    Console.WriteLine("Informe sua primeira nota:");
+    while(!double.TryParse(Console.ReadLine(), out n1)){
+        Console.WriteLine("Tentativa inválida. Por favor, informe uma nota válida:");
+    }
+    
+    Console.WriteLine("Informe sua segunda nota:");
+    while(!double.TryParse(Console.ReadLine(), out n2)){
+        Console.WriteLine("Tentativa inválida. Por favor, Informe uma nota válida:");
+    }
+    
+     media = (n1 + n2) / 2;
+     
+     if (media >= 7){
+         Console.WriteLine($"Você teve um bom rendimento! sua média é:{media:C2}");
+     } else {
+         Console.WriteLine($"Você não teve um bom rendimento. Sua média é: {media:C2}");
+     }
+     
+  }
+}
