@@ -1,0 +1,15 @@
+/workspaces/Logica-de-Programacao/bin/Debug/net10.0/Logica-de-Programacao
+/workspaces/Logica-de-Programacao/bin/Debug/net10.0/Logica-de-Programacao.deps.json
+/workspaces/Logica-de-Programacao/bin/Debug/net10.0/Logica-de-Programacao.runtimeconfig.json
+/workspaces/Logica-de-Programacao/bin/Debug/net10.0/Logica-de-Programacao.dll
+/workspaces/Logica-de-Programacao/bin/Debug/net10.0/Logica-de-Programacao.pdb
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.AssemblyInfoInputs.cache
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.AssemblyInfo.cs
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.csproj.CoreCompileInputs.cache
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.sourcelink.json
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.dll
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/refint/Logica-de-Programacao.dll
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.pdb
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/Logica-de-Programacao.genruntimeconfig.cache
+/workspaces/Logica-de-Programacao/obj/Debug/net10.0/ref/Logica-de-Programacao.dll
