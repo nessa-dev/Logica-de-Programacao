@@ -1,0 +1,28 @@
+// Read two integers and display the quotient and remainder of the integer division between them.
+
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        int number1, number2, remainder, quotient;
+
+        Console.WriteLine("Enter the first number:");
+        while (!int.TryParse(Console.ReadLine(), out number1))
+        {
+            Console.WriteLine("Please enter a valid number:");
+        }
+
+        Console.WriteLine("Enter the second number:");
+        while (!int.TryParse(Console.ReadLine(), out number2))
+        {
+            Console.WriteLine("Please enter a valid number:");
+        }
+
+        quotient = number1 / number2;
+        remainder = number1 % number2;
+
+        Console.WriteLine("The quotient is: " + quotient + " and the remainder is: " + remainder);
+    }
+}

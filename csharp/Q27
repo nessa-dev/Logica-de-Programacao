@@ -1,0 +1,19 @@
+// Read an integer and visualize its successor.
+
+using System;
+class Logic {
+static void Main(){
+
+int number, successor; 
+
+Console.WriteLine("Enter a integer number:");
+while(!int.TryParse(Console.ReadLine(), out number)){
+    Console.WriteLine("Please, enter a valid number:");
+}
+
+successor = number + 1;
+
+ Console.WriteLine("The successor of the number " + number + " is: " + successor);
+
+}
+}

@@ -1,0 +1,29 @@
+// Given the three sides of a triangle, determine its perimeter.
+
+using System;
+class Logic {
+static void Main(){
+
+int side1, side2, side3, perimeter;
+
+Console.WriteLine("Provide the first side of the triangle:");
+while(!int.TryParse(Console.ReadLine(), out side1)){
+    Console.WriteLine("Please, enter a valid number: ");
+}
+
+Console.WriteLine("Provide the second side of the triangle:");
+while(!int.TryParse(Console.ReadLine(), out side2)){
+    Console.WriteLine("Please, enter a valid number: ");
+}
+
+Console.WriteLine("Provide the third side of the triangle:");
+while(!int.TryParse(Console.ReadLine(), out side3)){
+    Console.WriteLine("Please, enter a valid number: ");
+}
+
+perimeter = side1 + side2 + side3;
+
+Console.WriteLine("The perimeter of the triangle is: " + perimeter); 
+
+}
+}

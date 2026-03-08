@@ -1,0 +1,18 @@
+// Ask for a person's age in days and display the age on the screen in years, months, and days.
+
+using System;
+class Logic {
+    static void Main(){
+        int age, months, days, years;
+
+        Console.WriteLine("Enter your age in days: ");
+        while(!int.TryParse(Console.ReadLine(), out age)){
+            Console.WriteLine("Please, enter a valid age: ");
+        }
+        years = age / 365;
+        months = (age % 365) / 30;
+        days = (age % 365) % 30;
+
+        Console.WriteLine("You are " + years + " years, " + months + " months and " + days + " days old.");
+    }
+}
