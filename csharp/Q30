@@ -1,0 +1,24 @@
+// Given that the formula for converting Fahrenheit to Celsius 
+//is C = 5/9 (F – 32), it read a temperature value in Fahrenheit 
+//and displayed it in Celsius.
+
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        double celsius, temp;
+
+        Console.WriteLine("Enter a temperature in Fahrenheit: ");
+
+        while (!double.TryParse(Console.ReadLine(), out temp))
+        {
+            Console.WriteLine("Please, enter a valid temperature: ");
+        }
+
+        celsius = 5.0 / 9 * (temp - 32);
+
+        Console.WriteLine("Your temperature in Celsius is: " + celsius);
+    }
+}

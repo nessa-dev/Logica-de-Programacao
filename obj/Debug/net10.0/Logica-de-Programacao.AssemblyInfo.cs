@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Logica-de-Programacao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+544b30dbbabf1741ca2c475788b82ab62ac8219c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+161a41f186a402a8f6b2db509863a9f3ef280f05")]
 [assembly: System.Reflection.AssemblyProductAttribute("Logica-de-Programacao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Logica-de-Programacao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

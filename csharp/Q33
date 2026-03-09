@@ -1,0 +1,24 @@
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        double sum = 0; 
+        double grade;
+        int totalTests = 4; 
+
+        for (int i = 1; i <= totalTests; i++)
+        {
+            Console.Write("Enter grade for test " + i + ": ");
+            while (!double.TryParse(Console.ReadLine(), out grade))
+            {
+                Console.Write("Invalid input. Enter a valid number: ");
+            }
+            sum += grade;
+        }
+
+        double semesterAverage = sum / totalTests;
+        Console.WriteLine("Your semester grade is: " + semesterAverage);
+    }
+}

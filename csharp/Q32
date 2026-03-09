@@ -1,0 +1,27 @@
+// Convert an integer less than 32 to its binary representation.
+
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        int number;
+        string binary = "";
+
+        Console.WriteLine("Enter an integer: ");
+
+        while (!int.TryParse(Console.ReadLine(), out number))
+        {
+            Console.WriteLine("Please enter a valid number:");
+        }
+
+        while (number > 0)
+        {
+            binary = (number % 2) + binary;
+            number = number / 2;
+        }
+
+        Console.WriteLine("Binary: " + binary);
+    }
+}

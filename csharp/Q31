@@ -1,0 +1,24 @@
+// Write an algorithm that calculates and displays the volume of 
+// an oil can, given its radius and height.
+
+using System;
+class Logic{
+    static void Main(){
+        double height, radius, volume;
+
+        Console.WriteLine("Enter witthe height of the oil can: ");
+        while(!double.TryParse(Console.ReadLine(), out height)){
+            Console.WriteLine("Please enter with a validad height: ");
+        }
+
+        Console.WriteLine("Enter witthe radius of the oil can: ");
+        while(!double.TryParse(Console.ReadLine(), out radius)){
+            Console.WriteLine("Please enter with a validad radius: ");
+        }
+        
+        volume = (3.142 * (radius * radius)) * height;
+        Console.WriteLine("Volume is: "+ volume);
+
+    }
+}
+
