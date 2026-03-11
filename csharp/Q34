@@ -1,0 +1,24 @@
+// Write an algorithm that converts a speed given in m/s by 
+// the user to km/h. To do this, multiply the value in m/s by 3.6.
+
+
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        double speed, kmh;
+
+        Console.WriteLine("Enter a speed in m/s:");
+
+        while (!double.TryParse(Console.ReadLine(), out speed))
+        {
+            Console.WriteLine("Please enter a valid speed:");
+        }
+
+        kmh = speed * 3.6;
+
+        Console.WriteLine("The speed in km/h is: " + kmh);
+    }
+}
