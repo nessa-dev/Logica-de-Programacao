@@ -1,0 +1,30 @@
+// An electrical circuit consists of two resistors R1 and R2 in parallel, 
+// and both in sequence with a resistor R3. Write an algorithm to calculate
+//  the equivalent resistance of this circuit.
+
+using System;
+
+class Logic
+{
+    static void Main()
+    {
+        double r1, r2, r3, rp, req;
+
+        Console.WriteLine("Enter R1:");
+        r1 = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter R2:");
+        r2 = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter R3:");
+        r3 = double.Parse(Console.ReadLine());
+
+        // parallel resistance
+        rp = 1 / (1/r1 + 1/r2);
+
+        // total resistance
+        req = rp + r3;
+
+        Console.WriteLine("Equivalent resistance: " + req);
+    }
+}
