@@ -1,0 +1,22 @@
+// Create an algorithm that reads how much money a person 
+// has in their wallet (in R$) and shows how many dollars 
+// they can buy. Consider US$1.00 = R$3.45.
+
+
+using System;
+
+class Logic {
+    static void Main(){
+
+        double money, dollar;
+        double exchangeRate = 3.45;
+
+        Console.WriteLine("How much money do you have in R$?");
+        money = double.Parse(Console.ReadLine());
+
+        dollar = money / exchangeRate;
+
+        Console.WriteLine("You can buy: " + dollar.ToString("F2") + " dollars");    
+        
+    }
+}
